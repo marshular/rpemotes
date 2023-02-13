@@ -673,3 +673,6 @@ exports("EmoteCancel", EmoteCancel)
 exports("CanCancelEmote", function(State)
 		CanCancel = State == true
 end)
+exports('isInAnim', function()
+	return IsInAnimation 
+end)
