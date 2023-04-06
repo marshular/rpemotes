@@ -26,7 +26,7 @@ Config = {
     -- Use a 512 x 128 image!
     -- Note this might cause an issue of the image getting stuck on peoples screens
     CustomMenuEnabled = true,
-    MenuImage = "https://i.giphy.com/media/zpKIWAzNO9IhYwEGkN/giphy.gif", ----[Custom banner IMGUR or GIPHY URLs go here ]---
+    MenuImage = "https://i.giphy.com/media/kL2WStvEEokt0MioqC/giphy.gif", ----[Custom banner IMGUR or GIPHY URLs go here ]---
     -- You can change the menu image by pasting a link above. It must be the same width and length
     -- You can change the name of the menu here or leave it blank to remove the text in front of the custom banners
     MenuTitle = "",
@@ -61,13 +61,13 @@ Config = {
     AnimalEmotesEnabled = true,
     -- Used to enable or disable the search feature in the menu.
     Search = true,
-    -- You can disable the handsup here / change the keybind. It is currently set to H
+    -- You can disable the handsup here / change the keybind. It is currently set to Y
     HandsupKeybindEnabled = false,
-    HandsupKeybind = 'h', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
+    HandsupKeybind = 'Y', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
     -- You can disable the fingrer pointing here / change the keybind. It is currently set to B
     PointingEnabled = false,
     PointingKeybindEnabled = true,
-    PointingKeybind = 'b', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
+    PointingKeybind = 'B', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
     -- If crouching should be enabled.
     CrouchEnabled = true,
     CrouchKeybindEnabled = true, -- If true, crouching will use keybinds.

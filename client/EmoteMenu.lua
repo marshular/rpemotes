@@ -1,6 +1,11 @@
-rightPosition = { x = 1450, y = 100 }
-leftPosition = { x = 0, y = 100 }
-menuPosition = { x = 0, y = 200 }
+local rightPosition = { x = 1450, y = 100 }
+local leftPosition = { x = 0, y = 100 }
+local menuPosition = { x = 0, y = 200 }
+
+if GetAspectRatio() > 2.0 then
+    rightPosition = { x = 1200, y = 100 }
+    leftPosition = { x = -250, y = 100 }
+end
 
 if Config.MenuPosition then
     if Config.MenuPosition == "left" then
@@ -491,10 +496,10 @@ function AddInfoMenu(menu)
         "<b>Kibook</b> for the addition of Animal Emotes 🐩 submenu."))
     infomenu:AddItem(NativeUI.CreateItem("Thanks ~y~AvaN0x 🇮🇹~s~",
         "~y~AvaN0x~s~ for reformatting and assisting with code and additional features 🙏"))
+    infomenu:AddItem(NativeUI.CreateItem("Thanks <font color=\"#0e64ed\">Mads 🤖</font>",
+        "<font color=\"#0e64ed\">Mads 🤖</font> for the addition of Exit Emotes, Crouch & Crawl ⚙️"))
     infomenu:AddItem(NativeUI.CreateItem("Thanks <font color=\"#1C9369\">northsqrd ⚙️</font>",
         "<font color=\"#1C9369\">northsqrd</font> for assisting with search feature and phone colours 🔎"))
-    infomenu:AddItem(NativeUI.CreateItem("Thanks <font color=\"#A6A333\">Scullyy 👨‍💻</font>",
-        "<font color=\"#A6A333\">Scullyy</font> for assisting with code and rebranding"))
     infomenu:AddItem(NativeUI.CreateItem("Thanks <font color=\"#15BCEC\">GeekGarage 🤓</font>",
         "<font color=\"#15BCEC\">GeekGarage</font> for assisting with code and features"))
     infomenu:AddItem(NativeUI.CreateItem("Thanks <font color=\"#3b8eea\">SMGMissy 🪖</font>",
@@ -533,8 +538,6 @@ function AddInfoMenu(menu)
         "<font color=\"#FB7403\">Crowded1337</font> for the custom Gucci bag 👜"))
   infomenu:AddItem(NativeUI.CreateItem("Thanks <font color=\"#8180E5\">EnchantedBrownie 🍪</font>",
         "<font color=\"#8180E5\">EnchantedBrownie 🍪</font> for the custom animations 🍪"))
-  infomenu:AddItem(NativeUI.CreateItem("Thanks <font color=\"#0e64ed\">Mads 🤖</font>",
-        "<font color=\"#0e64ed\">Mads 🤖</font> for the addition of Exit Emotes, Crouch & Crawl ⚙️"))
   infomenu:AddItem(NativeUI.CreateItem("Thanks <font color=\"#eb540e\">Copofiscool 🇦🇺</font>",
         "<font color=\"#eb540e\">Copofiscool</font> for the Favorite Emote keybind toggle fix 🇦🇺"))
   infomenu:AddItem(NativeUI.CreateItem("Thanks <font color=\"#40E0D0\">iSentrie </font>",
@@ -542,7 +545,11 @@ function AddInfoMenu(menu)
   infomenu:AddItem(NativeUI.CreateItem("Thanks <font color=\"#7B3F00\">Chocoholic Animations 🍫</font>",
         "<font color=\"#7B3F00\">Chocoholic Animations</font> for the custom emotes 🍫"))
   infomenu:AddItem(NativeUI.CreateItem("Thanks <font color=\"#34cf5d\">CrunchyCat 🐱</font>",
-        "<font color=\"#34cf5d\">CrunchyCat</font> for the custom emotes 🐱"))
+        "<font color=\"#34cf5d\">CrunchyCat 🐱</font> for the custom emotes 🐱"))
+  infomenu:AddItem(NativeUI.CreateItem("Thanks <font color=\"#d10870\">KayKayMods</font>",
+        "<font color=\"#d10870\">KayKayMods</font> for the custom props 🧋"))
+  infomenu:AddItem(NativeUI.CreateItem("Thanks <font color=\"#de1846\">Dark Animations</font>",
+        "<font color=\"#de1846\">Dark Animations</font> for the custom animations 🖤"))
 
     infomenu:AddItem(NativeUI.CreateItem("Thanks to the community", "Translations, bug reports and moral support 🌐"))
 end
